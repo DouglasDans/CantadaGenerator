@@ -23,8 +23,8 @@ app.get("/", async (req, res) => {
 })
 
 app.get("/request", async (req, res) => {
-    
-    fetchAPI("Mande cantadas com o tema: programação")
+    const {tema} = req.query
+    fetchAPI(`Mande uma cantada com o tema: ${tema}`)
         .then(data => res.render("request", {data: data.choices[0].message.content}))
 })
 

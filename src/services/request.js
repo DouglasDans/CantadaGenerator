@@ -10,7 +10,7 @@ function fetchAPI(msg){
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{role: "user", content: msg}],
-            max_tokens: 10,
+            max_tokens: 100,
         })
     }
     try {
