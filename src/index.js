@@ -23,10 +23,12 @@ app.get("/", async (req, res) => {
 })
 
 app.get("/request", async (req, res) => {
-    const {tema} = req.query
-    fetchAPI(`Mande uma cantada com o tema: ${tema}`)
-        .then(data => res.render("request", {data: data.choices[0].message.content}))
+    // const {tema} = req.query
+    // fetchAPI(`Mande uma cantada com o tema: ${tema}`)
+    //     .then(data => res.render("request", {data: data.choices[0].message.content}))
+    res.render("request", {data: "Maria! Maria! Estoy enamorado por ti, Maria!"})
 })
+
 
 app.listen(portaRede, () => {
     console.log("[express] Working http://localhost:" + portaRede);

@@ -10,7 +10,10 @@
   "author": "DouglasDans and jackelinepaula",
   "license": "ISC",
   "dependencies": {
+    "-": "^0.0.1",
     "dotenv": "^16.0.3",
-    "express-handlebars": "^7.0.7"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "nodemon": "^2.0.22"
   }
 }
