@@ -87,12 +87,12 @@ form{
 }
 
 /* Butão */
-.btn{
+.button{
     display: flex;
     justify-content: center;
 }
 
-.btn a{
+.button a{
     text-decoration: none;
     background-color: #ff5864;
     padding: 5px 10px 5px 10px;
